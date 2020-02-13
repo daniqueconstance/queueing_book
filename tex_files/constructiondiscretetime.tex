@@ -308,11 +308,11 @@ Take $d_k = \min\{L_{k-1}+a_k, c_k\}$, and assume that jobs are served in FIFO s
  In formulas, the above comes down to the following.
  A job that arrives in period $k$ cannot be served before period
  \begin{equation*}
- W_{-,k}:= \min\left\{m: \sum_{i=k}^{k+m} c_i > L_{k-1}\right\},
+ W_{-,k}:= \min\left\{m: \sum_{i=k}^{m} c_i > L_{k-1}\right\},
  \end{equation*}
  and it must have been served before period
  \begin{equation*}
- W_{+,k}:= \min\left\{m: \sum_{i=k}^{k+m} c_i \geq
+ W_{+,k}:= \min\left\{m: \sum_{i=k}^{m} c_i \geq
  L_{k-1}+a_k\right\}.
  \end{equation*}
  Thus, the waiting time of jobs arriving in period $k$ must lie in
